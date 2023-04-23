@@ -1,10 +1,10 @@
-name = "<name>"
+name = "types"
 authors = [ "CoffeeTableEspresso <coffeetableespresso@gmail.com>" ]
 version = "v0.1.0"
-license = "<license>"
+license = "MIT"
 
 [build]
 sources = []
-scripts = []
+scripts = [ "types.yasl" ]
 
 [deps]

@@ -1,0 +1,41 @@
+
+const fn typeof(v) {
+    match v {
+    int {
+        return 'int'
+    }
+    float {
+        return 'float'
+    }
+    bool {
+        return 'bool'
+    }
+    str {
+        return 'str'
+    }
+    list {
+        return 'list'
+    }
+    table {
+        return 'table'
+    }
+    }
+    return undef
+}
+
+const fn isint(v) -> typeof(v) == 'int'
+const fn isfloat(v) -> typeof(v) == 'float'
+const fn isbool(v) -> typeof(v) == 'bool'
+const fn isstr(v) -> typeof(v) == 'str'
+const fn islist(v) -> typeof(v) == 'list'
+const fn istable(v) -> typeof(v) == 'table'
+
+export {
+    .typeof: typeof,
+    .isint: isint,
+    .isbool: isbool,
+    .isstr: isstr,
+    .islist: islist,
+    .istable: istable
+}
+
